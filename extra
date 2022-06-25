@@ -14,18 +14,31 @@ stackoverflow (signup)
 3> Your Profile Website
 
 4 mini project 
-
 calc
 darklight
 weather
 geolocation
+
 >>>>>>>>>>>><<<<<<<<<<<<<<
-HTML/html5
-Css/css3
-Bootstrap3,4,5
-JavaScript
-Nodejs
-MongoDb
-React
+HTML/html5  >> Raw Structure
+Css/css3 >>> Look & Feel (Design)
+Bootstrap3,4,5 >>> Responsive
+JavaScript >>> Logics
+
+Nodejs > Backend
+MongoDb > Database
+React > Frontend
+
+head> all the linking 
+        (css, javascript )
+body > All the content that is visible to the user
 
 
+Block Level
+> Start From the new line
+> Take whole width of screen
+> p div section
+Inline 
+> Start in the same line
+> Only take space which is required
+> span a img
