@@ -1,0 +1,15 @@
+https://raw.githubusercontent.com/Aakashdeveloper/Aakashdeveloper/master/README.md
+
+//firsttime from new folder
+
+git init
+git add .
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://aakashdevloper:personalaacesstoken@github.com/Aakashdeveloper/aakashprofile.git
+git push -u origin main
+
+//next all time from same folder
+git add .
+git commit -m "first commit"
+git push
