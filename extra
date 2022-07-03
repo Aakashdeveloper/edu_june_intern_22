@@ -52,3 +52,33 @@ Skills
 Hoobies (optional)
 map
 copyright
+
+inline > styletag > stylesheet
+
+#inline
+{
+  color:red;
+  font-size:30px;
+}
+
+#styletag
+{
+  color:orange;
+  height:200px;
+  width:300px;
+}
+
+#stylesheet
+{
+  height:400px;
+  border:black;
+  font-size:40px
+}
+
+{
+  color:red;
+  font-size:30px;
+  height:200px;
+  width:300px;  
+  border:black;
+}
