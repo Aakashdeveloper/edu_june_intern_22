@@ -82,3 +82,21 @@ inline > styletag > stylesheet
   width:300px;  
   border:black;
 }
+
+
+3 Ways to target
+> tagName
+ # h1 , p, div
+ # if we target by tagname all the tag of same type will get the property
+> Id
+# we use hash symbole(#) for id
+# this is use to target indiviual element 
+> ClassName
+# we use dot symbole(.) for id
+# when we have to target group of element(multiple Element)
+
+solid
+dotted
+double
+groove
+dahsed
