@@ -1,0 +1,71 @@
+
+body{
+    margin:auto
+}
+a{
+    text-decoration: none;
+}
+header{
+    height:70px;
+    /*border:5px solid blue;*/
+    background-color: #3b2632;
+}
+#brand{
+    color:#fff;
+    font-size:30px;
+    float:left;
+    margin-top: 1%;
+    margin-left: 1%;
+}
+#social{
+    float:right;
+    margin-top: 7px;
+    margin-right: 1%;
+}
+.socialImg{
+    height:50px;
+}
+/* Search Block Css */
+#container{
+    height:700px;
+    width: 80%;
+    margin-left:10%;
+    margin-top: 2%;
+}
+
+.filter{
+    height:500px;
+    width:20%;
+    border:2px solid green;
+    float: left;
+}
+
+.content{
+    height:700px;
+    width:75%;
+    margin-left:4%;
+    border:2px solid rgb(38, 0, 128);
+    float: left;
+}
+
+/* Footer Block Css */
+footer{
+    height:140px;
+    background-color: #3b2632;
+    color:#fff;
+    text-align: center;
+}
+
+ul{
+    list-style: none;
+}
+
+.fotDiv{
+    width:31%;
+    float:left;
+    border-right: 2px solid white;
+}
+
+.noBorder{
+    border:none
+}

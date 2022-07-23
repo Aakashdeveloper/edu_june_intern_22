@@ -1,0 +1,108 @@
+
+body{
+    margin:auto
+}
+a{
+    text-decoration: none;
+}
+header{
+    height:70px;
+    /*border:5px solid blue;*/
+    background-color: #3b2632;
+}
+#brand{
+    color:#fff;
+    font-size:30px;
+    float:left;
+    margin-top: 1%;
+    margin-left: 1%;
+}
+#social{
+    float:right;
+    margin-top: 7px;
+    margin-right: 1%;
+}
+.socialImg{
+    height:50px;
+}
+/* Search Block Css */
+#container{
+    height:700px;
+    width: 80%;
+    margin-left:10%;
+    margin-top: 2%;
+}
+
+#imgDiv{
+    height:500px;
+    width:45%;
+    float:left;
+    border:10px groove gray;
+}
+
+#imgDiv > img{
+    height:500px;
+    width:100%;
+}
+
+#contentDiv{
+    height:600px;
+    width: 45%;
+    margin-left:2%;
+    float: left;
+    margin-top:-2%
+}
+
+.feature_contianer{
+    width:100%;
+    display: inline-block;
+}
+
+figure{
+    float: left;
+    margin-left:5%
+}
+
+.featureIcon{
+    height:100px;
+    width:100px;
+}
+
+h2{
+    font-size:40px;
+    color:green;
+}
+
+.btn{
+    height: 60px;
+    width: 170px;
+    font-size: 20px;
+    background-color: #3b2632;
+    color:#fff
+}
+
+.gray{
+    background-color: gray;
+}
+
+/* Footer Block Css */
+footer{
+    height:140px;
+    background-color: #3b2632;
+    color:#fff;
+    text-align: center;
+}
+
+ul{
+    list-style: none;
+}
+
+.fotDiv{
+    width:31%;
+    float:left;
+    border-right: 2px solid white;
+}
+
+.noBorder{
+    border:none
+}
