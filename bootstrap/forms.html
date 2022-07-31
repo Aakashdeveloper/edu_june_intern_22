@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <hr/>
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    Employee
+                </div>
+                <div class="panel-body">
+                    <form action="" method="GET">
+                        <div class="form-group has-success">
+                            <label class="control-label">FirstName</label>
+                            <input class="form-control" name="fname" required
+                            placeholder="firstname" />
+                        </div>
+                        <div class="form-group">
+                            <label>LastName</label>
+                            <input  class="form-control" name="lname" value="sharma"/>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Email</label>
+                                    <input  class="form-control" name="email" type="email"
+                                    required placeholder="a@a.com"/>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Passowrd</label>
+                                    <input  class="form-control" name="password" type="password"/>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <label>Gender</label>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" value="female" name="gender"/>Female
+                                    </label>
+                                    <label>
+                                        <input type="radio" value="male" name="gender"/>Male
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <label>Language</label>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" value="React" name="lang"/>React
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" value="JavaScript" name="lang"/>JavaScript
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" value="Node" name="lang"/>Node
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Country</label>
+                            <select class="form-control" name="loc">
+                                <option>India</option>
+                                <option>France</option>
+                                <option>Germany</option>
+                            </select>
+                        </div>
+
+                        <button class="btn btn-success">Submit</button>
+                    </form>
+                    
+                 </div>
+            </div>
+        </div>
+    </body>
+
+</html>

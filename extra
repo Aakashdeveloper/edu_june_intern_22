@@ -106,7 +106,13 @@ https://owlcarousel2.github.io/OwlCarousel2/demos/basic.html
 https://www.w3schools.com/howto/default.asp
 
 Bootstrap3
+768px < xs
+768px> sm
+992px> md
+1200px > lg
+
 
 Bootstrap4
 
 Bootstrap5
+

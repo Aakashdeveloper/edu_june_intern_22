@@ -1,0 +1,47 @@
+.btn-teal{
+    background-color: teal !important;
+}
+
+.trashicon{
+    font-size:20px;
+    color:red
+}
+
+.editicon{
+    font-size:20px;
+    color:green
+}
+
+.slideImg{
+    width:100%;
+    height:400px !important;
+}
+
+#first{
+    height:200px;
+    background-color:olive
+}
+#second{
+    height:200px;
+    background-color:rgb(148, 224, 234)
+}
+#third{
+    height:200px;
+    background-color:rgb(19, 54, 58)
+}
+#fourth{
+    height:200px;
+    background-color:rgb(93, 38, 64)
+}
+#fifth{
+    height:200px;
+    background-color:rgb(103, 97, 194)
+}
+#sixth{
+    height:200px;
+    background-color:rgb(97, 194, 97)
+}
+#seventh{
+    height:200px;
+    background-color:rgb(199, 134, 68)
+}
