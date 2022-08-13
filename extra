@@ -3,8 +3,11 @@ https://github.com/Aakashdeveloper (Follow)
 https://code.visualstudio.com/ (download & install)
 https://git-scm.com/downloads ( to talk to github)
 https://www.youtube.com/developerfunnel (Subscribe)
+https://nodejs.org/en/ (download & install)
 linkedIn (Signup)
 stackoverflow (signup)
+
+node -v (to check node version)
 
 4 modules
 7 different
@@ -127,3 +130,17 @@ Bootstrap5
 992px > lg
 1200px > xl
 1400px > xxl
+
+////////////////////////////
+Ecma Script5
+Ecma Script6
+es5
+es6
+
+//es5
+function add(a,b){
+  return a+b
+}
+
+//es6
+let add  = (a,b) => { return a+b}
