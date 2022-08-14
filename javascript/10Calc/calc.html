@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="calc.js"> </script>
+    </head>
+    <body>
+        <div class="container">
+            <hr/>
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                Calc
+                </div>
+                <div class="panel-body">
+                    <div class="form-group">
+                        <label>First</label>
+                        <input class="form-control" id="first"/>
+                    </div>
+                     <div class="form-group">
+                        <label>Second</label>
+                        <input class="form-control" id="second"/>
+                    </div>
+                    <p class="output"></p>
+                    <button class="btn btn-success" onClick="calc('Add')">
+                        <span class="glyphicon glyphicon-plus"></span>
+                    </button>
+                    <button class="btn btn-danger" onClick="calc('Sub')">
+                        <span class="glyphicon glyphicon-minus"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
