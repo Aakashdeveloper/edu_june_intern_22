@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        
+        <style>
+            body{
+                background-color:white;
+                color:black
+            }
+            .mydark{
+                background-color:black;
+                color:white
+            }
+        </style>
+        <script>
+            const changeMode=()=>{
+                let mybody = document.body;
+                mybody.classList.toggle('mydark')
+            }
+        </script>
+    </head>
+    <body>
+        <h2>Light Dark Mode</h2>
+        <p>We Are working on dark light mode</p>
+        <span class="glyphicon glyphicon-certificate" onClick="changeMode()"></span>
+    </body>
+</html>

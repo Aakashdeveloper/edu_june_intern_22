@@ -1,0 +1,169 @@
+<html>
+    <head>
+        <title>HomePage</title>
+        <link rel="stylesheet" href="home.css"/>
+        <script src="home.js"></script>
+    </head>
+    <body>
+        <header>
+            <div id="brand">
+                Developer Funnel
+            </div>
+            <div id="social">
+                <a href="www.facebook.com" target="_blank">
+                    <img src="images/facebook.png" alt="fb" class="socialImg"/>
+                </a>
+                <a href="www.facebook.com" target="_blank">
+                    <img src="images/insta.png" alt="fb" class="socialImg"/>
+                </a>
+                <a href="www.facebook.com" target="_blank">
+                    <img src="images/youtube1.png" alt="fb" class="socialImg"/>
+                </a>
+            </div>
+        </header>
+        <div id="coupon">
+            <h1>Coupon Code</h1>
+            <button onClick="closeCoupon()">&times;</button>
+        </div>
+        <div id="search">
+            <div id="logo">
+                <span>D!</span>
+            </div>
+            <div id="heading">
+                Find Best Place Near You
+            </div>
+            <div id="dropdown">
+                <select>
+                    <option>----SELECT CITY----</option>
+                    <option>Delhi</option>
+                    <option>Mumbai</option>
+                </select>
+                <select id="restSelect">
+                    <option>----SELECT Restaurants----</option>
+                    <option>Wow Moms</option>
+                    <option>ChopStick</option>
+                </select>
+            </div>
+        </div>
+        <div id="quickSearch">
+            <span id="QuickHeading">
+                Quick Search
+            </span>
+            <span id="QuickSubHeading">
+                Find Restaurants By MealType
+            </span>
+            <div class="mainTileContainer">
+                <div class="tileContainer">
+                    <div class="tileComponent1">
+                        <img src="images/drinks.png" alt="breakfast"/>
+                    </div>
+                    <div class="tileComponent2">
+                        <div class="componentHeading">
+                            <a href="../listing/listing.html">Breakfast</a>
+                        </div>
+                        <div class="componentSubHeading">
+                            Best Deal For BreakFast
+                        </div>
+                    </div>
+                
+                </div>
+                <div class="tileContainer">
+                    <div class="tileComponent1">
+                        <img src="images/nightlife.png" alt="breakfast"/>
+                    </div>
+                    <div class="tileComponent2">
+                        <div class="componentHeading">
+                            <a href="../listing/listing.html">Breakfast</a>
+                        </div>
+                        <div class="componentSubHeading">
+                            Best Deal For BreakFast
+                        </div>
+                    </div>
+                
+                </div>
+                <div class="tileContainer">
+                    <div class="tileComponent1">
+                        <img src="images/snacks.png" alt="breakfast"/>
+                    </div>
+                    <div class="tileComponent2">
+                        <div class="componentHeading">
+                            <a href="../listing/listing.html">Breakfast</a>
+                        </div>
+                        <div class="componentSubHeading">
+                            Best Deal For BreakFast
+                        </div>
+                    </div>
+                
+                </div>
+                <div class="tileContainer">
+                    <div class="tileComponent1">
+                        <img src="images/chatkaz.jpg" alt="breakfast"/>
+                    </div>
+                    <div class="tileComponent2">
+                        <div class="componentHeading">
+                            <a href="../listing/listing.html">Breakfast</a>
+                        </div>
+                        <div class="componentSubHeading">
+                            Best Deal For BreakFast
+                        </div>
+                    </div>
+                
+                </div>
+                <div class="tileContainer">
+                    <div class="tileComponent1">
+                        <img src="images/food-tile.png" alt="breakfast"/>
+                    </div>
+                    <div class="tileComponent2">
+                        <div class="componentHeading">
+                            <a href="../listing/listing.html">Breakfast</a>
+                        </div>
+                        <div class="componentSubHeading">
+                            Best Deal For BreakFast
+                        </div>
+                    </div>
+                
+                </div>
+                <div class="tileContainer">
+                    <div class="tileComponent1">
+                        <img src="images/south.png" alt="breakfast"/>
+                    </div>
+                    <div class="tileComponent2">
+                        <div class="componentHeading">
+                            <a href="../listing/listing.html">Breakfast</a>
+                        </div>
+                        <div class="componentSubHeading">
+                            Best Deal For BreakFast
+                        </div>
+                    </div>
+                
+                </div>
+                
+            </div>
+        </div>
+        <footer>
+            <hr>
+            <h3>&copy; Developer Funnel</h3>
+            <div class="fotDiv">
+                <ul>
+                    <li>Contact Us</li>
+                    <li>About Us</li>
+                </ul>
+            </div>
+            <div class="fotDiv">
+                <ul>
+                    <li>Contact Us</li>
+                    <li>About Us</li>
+                </ul>
+            </div>
+            <div class="fotDiv noBorder">
+                <ul>
+                    <li>Contact Us</li>
+                    <li>About Us</li>
+                </ul>
+            </div>
+        </footer>
+        <script>
+            window.onload=loadCoupon()
+        </script>
+    </body>
+</html>
