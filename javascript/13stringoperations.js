@@ -108,3 +108,29 @@ uname.replaceAll(' ','')
 'kanika.'
 uname.replace(/ /g,'')
 'kanika.'
+
+var a = "https://github.com/Aakashdeveloper/Edu_ang_july_2022"
+undefined
+a.split('/')
+(5) ['https:', '', 'github.com', 'Aakashdeveloper', 'Edu_ang_july_2022']
+var out = a.split('/')
+undefined
+out[4]
+'Edu_ang_july_2022'
+a.split('/')[4]
+'Edu_ang_july_2022'
+var a = "https://github.com/Aakashdeveloper/Juluang"
+undefined
+a.split('/')[4]
+'Juluang'
+
+var a = "JavaScript"
+undefined
+a.split('')
+(10) ['J', 'a', 'v', 'a', 'S', 'c', 'r', 'i', 'p', 't']
+var b = ['J', 'a', 'v', 'a', 'S', 'c', 'r', 'i', 'p', 't']
+undefined
+b.toString()
+'J,a,v,a,S,c,r,i,p,t'
+b.toString().replaceAll(',','')
+'JavaScript'
