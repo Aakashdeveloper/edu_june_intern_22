@@ -1,0 +1,12 @@
+[
+    {
+        "name":"Avengers",
+        "rating":4.5,
+        "type":"Action"
+    },
+    {
+        "name":"Jab We Met",
+        "rating":4.7,
+        "type":"Romantic"
+    }
+]

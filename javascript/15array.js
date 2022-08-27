@@ -101,6 +101,7 @@ a.indexOf('Boston')
 5
 
 var c = ['a','b','c',1]
+
 var b = [2,'d','e','f']
 c+b
 'a,b,c,12,d,e,f'
