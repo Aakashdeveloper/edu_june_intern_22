@@ -144,3 +144,10 @@ function add(a,b){
 
 //es6
 let add  = (a,b) => { return a+b}
+
+
+https://api.openweathermap.org/data/2.5/forecast/daily?lat=28.9890667&lon=77.0342225&mode=json&units=metric&cnt=5&appid=fbf712a5a83d7305c3cda4ca8fe7ef29
+
+
+https://zomatoajulypi.herokuapp.com/location
+https://zomatoajulypi.herokuapp.com/restaurant?stateId=4
