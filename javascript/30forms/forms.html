@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="forms.js"></script>
+        <link href="forms.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <div class="container">
+            <hr/>
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    Employee
+                </div>
+                <div class="panel-body">
+                    <form action="" method="GET">
+                        <div class="form-group" id="fdiv">
+                            <label class="control-label">FirstName</label>
+                            <input class="form-control" name="fname" id="fname"
+                            placeholder="firstname" onblur="validateFname()"/>
+                            <p id="fout"></p>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Email</label>
+                                    <input  class="form-control" name="email" id="email"
+                                     placeholder="a@a.com" oninput="validateEmail()"/>
+                                     <p id="eout"></p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Passowrd</label>
+                                    <input  class="form-control" name="password" type="password"
+                                    id="pwd" oninput="validatePassword()"/>
+                                    <span class="glyphicon glyphicon-eye-open" onclick="showPassword()"></span>
+                                    <p id="pout"></p>   
+                                    <div id="ppout"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Confirm Passowrd</label>
+                                    <input  class="form-control" name="cpassword" type="password"
+                                    id="cpwd" oninput="validateCPassword()"/>
+                                    <p id="cpout"></p>   
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Country</label>
+                            <span></span>
+                            <select class="form-control" name="loc" onChange="getCity()"
+                            id="country">
+                                <option>India</option>
+                                <option>France</option>
+                                <option>Germany</option>
+                            </select>
+                        </div>
+
+                        <button class="btn btn-success">Submit</button>
+                    </form>
+                    
+                 </div>
+            </div>
+        </div>
+    </body>
+
+</html>

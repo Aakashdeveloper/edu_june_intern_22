@@ -75,7 +75,6 @@ city.charAt(0).toUpperCase()+city.slice(1).toLowerCase()
 
 
 var uname = "  kanika  "
-undefined
 uname.length
 10
 uname.trim()
