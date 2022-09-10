@@ -54,3 +54,27 @@ movie['rating']=4.5
 
 a[1].name
 'Jab We Met'
+
+var movie = {
+    name:'Avengers',
+    rating:4.5,
+    type:'Action'
+}
+
+for(key in movie){
+    console.log(key)
+}
+
+name
+rating
+type
+
+for(key in movie){
+    console.log(movie[key])
+}
+
+Avengers
+4.5
+Action
+
+///////
