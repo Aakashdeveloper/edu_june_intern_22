@@ -154,3 +154,39 @@ https://zomatoajulypi.herokuapp.com/restaurant?stateId=4
 
 
 regex > regular expression
+
+
+
+STEP FOR DATA
+> Write down all the pages you are going to have in your website
+> Start creating data
+
+> Home Pages
+> Listing Page
+> Details Page
+> Place Order Page
+> Order listing
+
+* List of City
+* List of Restaurant
+* QuickSearch List
+* List Of Menu
+
+
+# NodeJs
+> Single threaded Asynchronous Non Block input/output(I/O)
+
+Open Source
+> Anybody can contribute to development
+
+Code 
+  ||
+  \/
+  Machine Code
+
+> NodeJs do not require any server to compile
+
+Node Inbuilt
+OS
+FS
+HTTP
