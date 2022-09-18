@@ -190,3 +190,31 @@ Node Inbuilt
 OS
 FS
 HTTP
+
+
+///////Package.json////////
+> Starting point to the app
+> It Contains all the packages we require
+> It Conatins the scripts to run the app
+> Meta Data (Description of the app)
+
+// Step to generate package.json////
+**NodeJs must be install in laptop
+> go inside the folder using cmd
+> npm init
+> Answer all questions
+> Type "yes"
+
+// Step to install packages///
+**NodeJs must be install in laptop
+> go inside the folder using cmd
+(Local)
+> npm i packagename / npm install packagename
+(Dev)(Only require at time of development)
+> npm i --save-dev packagename
+
+
+
+Local
+GLobal
+Dev Dependency

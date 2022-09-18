@@ -1,0 +1,14 @@
+{
+  "name": "inbuilt",
+  "version": "1.0.0",
+  "description": "this is about node inbuilt",
+  "main": "fs.js",
+  "scripts": {
+    "start": "node http.js"
+  },
+  "keywords": [
+    "node"
+  ],
+  "author": "developer funnel",
+  "license": "ISC"
+}
