@@ -214,7 +214,25 @@ HTTP
 > npm i --save-dev packagename
 
 
+// Step to install Global packages///
+> Open the cmd as adminstrator
+> npm i -g packagename
+
+# mac/linux
+> open terminal
+> sudo npm i -g packagename
 
 Local
 GLobal
 Dev Dependency
+
+
+C > Create (POST)
+R > Read (GET)
+U > Update (PUT)
+D > Delete (DELETE)
+
+
+/////////
+Nodemon
+
