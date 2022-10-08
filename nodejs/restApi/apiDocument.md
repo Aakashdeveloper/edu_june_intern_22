@@ -1,9 +1,13 @@
 // Page1
 
 # List of City
+> http://localhost:2500/location
 # List of Restaurants
+> http://localhost:2500/restaurants
 # Restaurants wrt city
+> http://localhost:2500/restaurants?stateId=3
 # List of QuickSearch
+> http://localhost:2500/meals
 
 //Page2
 

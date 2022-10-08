@@ -73,7 +73,6 @@ db.colname.find()
 
 db.users.find().pretty()
 
-
 # Step to create database
 use juneintern
 
@@ -87,3 +86,35 @@ db.users.insert(
         {name:"Nikita",city:"Paris"},
         {name:"Arun",city:"Delhi"}
     ])
+
+db.users.insert({_id:1,name:"Ankit",city:"Delhi"})
+db.users.insert({_id:2,name:"Bhumika",city:"Amsterdam"})
+
+
+_id> ObjectId(unique value, cannot be duplicated)
+12 bytes
+5 bytes > RandomNumber
+3 bytes > Series
+4 bytes > TimeStamp
+
+
+///find with condition
+db.users.find({city:"Delhi"})
+db.users.find({city:"Amsterdam"})
+
+db.users.find({city:"Delhi","state":"abc"})
+
+////////
+https://cloud.mongodb.com/
+> Create cluster
+> Network access (0.0.0.0/0)
+> Database access > Add new database user > (admin/admin123)
+  BuiltIn-Role (Atlas Admin) > Add User
+
+> Database > conncet > connect your application > 
+mongodb+srv://<username>:<password>@cluster0.f8vmc.mongodb.net/?retryWrites=true&w=majority
+
+mongodb+srv://amit:amit123@cluster0.f8vmc.mongodb.net/?retryWrites=true&w=majority
+
+//local
+ mongodb://localhost:27017
