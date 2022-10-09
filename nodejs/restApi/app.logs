@@ -1,3 +1,0 @@
-::1 - GET /restaurants HTTP/1.1 304 - - 37.297 ms
-::1 - GET /restaurants?stateId=2 HTTP/1.1 200 4349 - 13.048 ms
-::1 - GET /restaurants?stateId=3 HTTP/1.1 200 2483 - 9.825 ms

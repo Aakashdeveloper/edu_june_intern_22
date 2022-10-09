@@ -118,3 +118,24 @@ mongodb+srv://amit:amit123@cluster0.f8vmc.mongodb.net/?retryWrites=true&w=majori
 
 //local
  mongodb://localhost:27017
+
+
+ db.restaurants.find({"mealTypes.mealtype_id":1}).pretty()
+
+ db.restaurants.find({condition},{projection})
+
+  db.restaurants.find({"mealTypes.mealtype_id":1},{restaurant_name:1,_id:0,mealTypes:1}).pretty()
+
+    db.restaurants.find({},{restaurant_name:1,_id:0}).pretty()
+
+  db.restaurants.find({$and:[{cost:{$gt:500,$lt:1000}}]},{restaurant_name:1,_id:0,cost:1}).pretty()
+
+  db.menu.find({menu_id:{$in:[4,20,32]}}).pretty()
+
+    db.menu.find({}).limit(5).skip(15).pretty()
+
+ db.restaurants.find({},{restaurant_name:1,_id:0,cost:1}).pretty()
+
+db.restaurants.find({},{restaurant_name:1,_id:0,cost:1}).sort({cost:1})
+
+db.restaurants.find({},{restaurant_name:1,_id:0,cost:1}).sort({cost:-1})
