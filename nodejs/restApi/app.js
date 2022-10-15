@@ -10,13 +10,16 @@ let port = process.env.PORT || 9800;
 let cors = require('cors');
 let mongo = require('mongodb');
 let MongoClient = mongo.MongoClient;
-let mongoUrl = process.env.MongoLocal;
+let mongoUrl = process.env.MongoLive;
+let bodyParser = require('body-parser')
 let db;
 
 
 // middleware
 app.use(morgan('short',{stream:fs.createWriteStream('./app.logs')}))
 app.use(cors());
+app.use(bodyParser.urlencoded({extended:true}))
+app.use(bodyParser.json())
 
 app.get('/',(req,res) => {
     res.send('This is From Express App code')
@@ -107,14 +110,26 @@ app.get('/menu/:id',(req,res) => {
     })
 })
 
+app.post('/placeOrder',(req,res) => {
+    console.log(req.body);
+    db.collection('orders').insert(req.body,(err,result) => {
+        if(err) throw err;
+        res.send('Order Placed')
+    })
+})
+
 // //menu details
-// app.get('/menuItem',(req,res) => {
-//     let id = Number(req.params.id)
-//     db.collection('menu').find({restaurant_id:id}).toArray((err,result) =>{
-//         if(err) throw err;
-//         res.send(result)
-//     })
-// })
+app.post('/menuItem',(req,res) => {
+    if(Array.isArray(req.body.id)){
+        db.collection('menu').find({menu_id:{$in:req.body.id}}).toArray((err,result) =>{
+            if(err) throw err;
+            res.send(result)
+        })
+    }else{
+        res.send('Inavlid Input')
+    }
+})
+
 
 //list of order
 app.get('/orders',(req,res) => {
@@ -130,6 +145,30 @@ app.get('/orders',(req,res) => {
     })
 })
 
+app.put('/updateOrder/:id',(req,res) => {
+    let oid = Number(req.params.id);
+    db.collection('orders').updateOne(
+        {orderId:oid},
+        {
+            $set:{
+                "status":req.body.status,
+                "bank_name":req.body.bank_name,
+                "date":req.body.date
+            }
+        },(err,result) => {
+            if(err) throw err;
+            res.send('Order Updated')
+        }
+    )
+})
+
+app.delete('/deleteOrder/:id',(req,res) => {
+    let _id = mongo.ObjectId(req.params.id);
+    db.collection('orders').deleteOne({_id},(err,result) => {
+        if(err) throw err;
+        res.send('Order Deleted')
+    })
+})
 
 
 //connection with mongo

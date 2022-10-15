@@ -2,6 +2,7 @@
 
 # List of City
 > http://localhost:2500/location
+https://noderestjune.herokuapp.com/location
 # List of Restaurants
 > http://localhost:2500/restaurants
 # Restaurants wrt city
@@ -31,11 +32,37 @@ http://localhost:2500/filter/1?lcost=200&hcost=700
 //Page 4
 
 # Menu Details (POST)
+> http://localhost:2500/placeOrder
+{
+	"orderId" : 2,
+	"name" : "Ankit",
+	"email" : "ankit@gmail.com",
+	"address" : "Hom 35",
+	"phone" : 8934645457,
+	"cost" : 833,
+	"menuItem" : [
+		9,34,27
+	]
+}
 # Place Order (POST)
+> http://localhost:2500/menuItem
+{
+	"id":[7,34,12]
+}
 
 //Page 5
 
 # List of orders
+> http://localhost:2500/orders
 # List of order wrt to email
+> http://localhost:2500/orders?email=nidhi@gmail.com
 # Update Payment Details (PUT)
+
+> http://localhost:2500/updateOrder/2
+{
+	"status":"Pending",
+	"bank_name":"PNB",
+	"date":"15/10/2022"
+}
 # Delete Order (Delete)
+> http://localhost:2500/deleteOrder/634a78374b7c5ccf7930f26e

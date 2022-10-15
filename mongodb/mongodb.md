@@ -139,3 +139,25 @@ mongodb+srv://amit:amit123@cluster0.f8vmc.mongodb.net/?retryWrites=true&w=majori
 db.restaurants.find({},{restaurant_name:1,_id:0,cost:1}).sort({cost:1})
 
 db.restaurants.find({},{restaurant_name:1,_id:0,cost:1}).sort({cost:-1})
+
+
+
+/////remove
+db.collection.remove({}) ///remove all records
+db.collection.remove({id:1}) // remove specific records
+
+//update
+
+db.col('orders).updateOne(
+  {condition},
+  {updatevalue}
+)
+
+db.col('orders).updateOne(
+  {orderId:1},
+  {
+    $set:{
+      "status":"delivered"
+    }
+  }
+)

@@ -4,6 +4,8 @@ https://code.visualstudio.com/ (download & install)
 https://git-scm.com/downloads ( to talk to github)
 https://www.youtube.com/developerfunnel (Subscribe)
 https://nodejs.org/en/ (download & install)
+https://www.postman.com/ (install)
+https://dashboard.heroku.com/ (Signup)
 linkedIn (Signup)
 stackoverflow (signup)
 
@@ -245,3 +247,10 @@ queryparams
 > what we pass after ?
 > no need to define
 > use to pass multiple values
+
+
+
+npm i -g heroku
+heroku login
+heroku apps
+heroku logs --app apname --tail
