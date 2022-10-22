@@ -256,3 +256,39 @@ heroku apps
 heroku logs --app apname --tail
 
 https://dashboard.paytm.com/
+
+
+React
+> react is a frontend framework/lib which help
+to build single page applications
+using component based structures
+
+
+https://medium.com/techmagic/reactjs-vs-angular5-vs-vue-js-what-to-choose-in-2018-b91e028fa91d
+
+
+////step to generate react app
+> open cmd
+> go inside the folder
+> npx create-react-app appname
+
+
+react > this is the main package
+react-dom > This will help to render the content
+react-scripts > This will help you to run the app
+
+/////////
+Functional
+> Dumb component
+> Mainly we use for the display purpose
+> We cannot maintain state
+
+
+Class
+> Logical Component
+> We use for logics, calling api, display as well
+> We can maintain the state
+
+
+
+Hooks
