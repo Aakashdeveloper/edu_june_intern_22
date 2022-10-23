@@ -292,3 +292,14 @@ Class
 
 
 Hooks
+
+
+//////
+State
+> State act like a local variable
+> Each component can have its own state
+> We can update the value of state
+
+Props
+> Props help to transfer data between nested component
+> We cannot update the value of props
