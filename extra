@@ -303,3 +303,14 @@ State
 Props
 > Props help to transfer data between nested component
 > We cannot update the value of props
+
+
+
+parent> child (props)
+child > parent (props with function)
+
+
+///default props
+History > for redirection
+Location > for query params
+Match > for params
