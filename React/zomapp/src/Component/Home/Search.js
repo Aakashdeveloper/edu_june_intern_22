@@ -1,7 +1,8 @@
 import React,{Component} from 'react';
 import './Search.css';
 
-const lurl = "https://zomatoajulypi.herokuapp.com/location"
+const lurl = "https://zomatoajulypi.herokuapp.com/location";
+const rurl = "https://zomatoajulypi.herokuapp.com/restaurant?stateId="
 
 class Search extends Component {
 
@@ -9,8 +10,38 @@ class Search extends Component {
         super()
 
         this.state={
-            location:''
+            location:'',
+            restaurants:''
         }
+    }
+
+    renderCity=(data)=>{
+        if(data){
+            return data.map((item) => {
+                return (
+                    <option value={item.state_id} key={item._id}>{item.state}</option>
+                )
+            })
+        }
+    }
+
+    renderRest=(data)=>{
+        if(data){
+            return data.map((item) => {
+                return(
+                    <option value={item.restaurant_id} key={item._id}>{item.restaurant_name} | {item.address}</option>
+                )
+            })
+        }
+    }
+
+    handleCity = (event) => {
+        const stateId = event.target.value
+        fetch(`${rurl}${stateId}`,{method:'GET'})
+        .then((res) => res.json())
+        .then((data) => {
+            this.setState({restaurants:data})
+        })
     }
 
     render(){
@@ -23,19 +54,25 @@ class Search extends Component {
                     Find Best Place Near You
                 </div>
                 <div id="dropdown">
-                    <select>
+                    <select onChange={this.handleCity}>
                         <option>----SELECT CITY----</option>
-                        <option>Delhi</option>
-                        <option>Mumbai</option>
+                        {this.renderCity(this.state.location)}
                     </select>
                     <select id="restSelect">
                         <option>----SELECT Restaurants----</option>
-                        <option>Wow Moms</option>
-                        <option>ChopStick</option>
+                        {this.renderRest(this.state.restaurants)}
                     </select>
                 </div>
             </div>
         )
+    }
+
+    //api calling on page load
+    componentDidMount(){
+        fetch(lurl,{method:'GET'})
+        .then((res) => res.json())
+        .then((data) => {this.setState({location:data})})
+
     }
 }
 

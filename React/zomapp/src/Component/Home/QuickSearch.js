@@ -5,6 +5,14 @@ const qurl = "https://zomatoajulypi.herokuapp.com/quicksearch"
 
 class QuickSearch extends Component {
 
+    constructor(){
+        super()
+
+        this.state={
+            mealType:''
+        }
+    }
+
     render(){
         return(
             <div id="quickSearch">
@@ -14,9 +22,18 @@ class QuickSearch extends Component {
                 <span id="QuickSubHeading">
                     Find Restaurants By MealType
                 </span>
-                <QuickDisplay/>
+                <QuickDisplay mealData={this.state.mealType}/>
             </div>
         )
+    }
+
+    // api calling on page load
+    componentDidMount() {
+        fetch(qurl,{method:'GET'})
+        .then((res) =>  res.json())
+        .then((data) => {
+            this.setState({mealType:data})
+        })
     }
     
 }
