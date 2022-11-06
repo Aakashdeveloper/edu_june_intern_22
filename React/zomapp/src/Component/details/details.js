@@ -1,16 +1,33 @@
 import React,{Component} from 'react';
 import axios from 'axios';
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import 'react-tabs/style/react-tabs.css';
 import './details.css';
+import MenuList from './menuList.js'
+import { Link } from 'react-router-dom'
 
-const url = "http://zomatoajulypi.herokuapp.com/details";
+const url = "http://zomatoajulypi.herokuapp.com";
+
 
 class Details extends Component{
     constructor(){
         super()
 
         this.state={
-            details:''
+            details:'',
+            menuList:'',
+            mealId:sessionStorage.getItem('mealId'),
+            userItem:''
         }
+    }
+
+    addToCart = (data) => {
+        this.setState({userItem:data})
+    }
+
+    proceed = () => {
+        sessionStorage.setItem('menu',this.state.userItem);
+        this.props.history.push(`/placeOrder/${this.state.details.restaurant_name}`)
     }
 
     render(){
@@ -38,16 +55,40 @@ class Details extends Component{
                                 <figcaption>Fully Senatized</figcaption>
                             </figure>
                         </div>
+                        <Tabs>
+                            <TabList>
+                                <Tab>About Us</Tab>
+                                <Tab>Contact Us</Tab>
+                            </TabList>
+
+                            <TabPanel>
+                                <p>{details.restaurant_name} is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                                </p>
+                            </TabPanel>
+                            <TabPanel>
+                                <h3>{details.address}</h3>
+                                <p>Contact No: {details.contact_number}</p>
+                            </TabPanel>
+                        </Tabs>
+                        <div>
+                            <Link to={`/listing/${this.state.mealId}`} className="btn btn-danger">Back</Link> &nbsp;
+                            <button className="btn btn-success" onClick={this.proceed}>Proceed</button>
+                        </div>
                     </div>
+                </div>
+                <div className="col-md-12">
+                    <MenuList menudata={this.state.menuList}
+                    finalOrder={(data) => {this.addToCart(data)}}/>
                 </div>
             </>
         )
     }
 
     async componentDidMount(){
-        let mealId = this.props.location.search.split('=')[1];
-        let response = await axios.get(`${url}/${mealId}`,{method:'GET'})
-        this.setState({details:response.data[0]})
+        let restId = this.props.location.search.split('=')[1];
+        let response = await axios.get(`${url}/details/${restId}`,{method:'GET'})
+        let menuData = await axios.get(`${url}/menu/${restId}`,{method:'GET'})
+        this.setState({details:response.data[0],menuList:menuData.data})
     }
 
 
