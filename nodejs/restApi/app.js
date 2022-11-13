@@ -10,7 +10,7 @@ let port = process.env.PORT || 9800;
 let cors = require('cors');
 let mongo = require('mongodb');
 let MongoClient = mongo.MongoClient;
-let mongoUrl = process.env.MongoLive;
+let mongoUrl = process.env.MongoLocal;
 let bodyParser = require('body-parser')
 let db;
 
@@ -146,9 +146,11 @@ app.get('/orders',(req,res) => {
 })
 
 app.put('/updateOrder/:id',(req,res) => {
+    console.log(req.body)
+    console.log(req.params.id)
     let oid = Number(req.params.id);
     db.collection('orders').updateOne(
-        {orderId:oid},
+        {id:oid},
         {
             $set:{
                 "status":req.body.status,

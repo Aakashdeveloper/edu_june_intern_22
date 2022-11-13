@@ -1,0 +1,26 @@
+footer{
+    height:220px;
+    background-color: #3b2632;
+    color:#fff;
+    text-align: center;
+    width:100%;
+    display: inline-block;
+}
+
+ul{
+    list-style: none;
+}
+
+.fotDiv{
+    width:31%;
+    float:left;
+    border-right: 2px solid white;
+}
+
+.noBorder{
+    border:none
+}
+.socialDiv{
+    display: inline-block;
+    width:100%
+}

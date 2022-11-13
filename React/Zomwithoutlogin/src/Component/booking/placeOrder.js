@@ -1,6 +1,5 @@
 import React,{Component} from 'react';
 import './placeOrder.css';
-import Header from '../../Header';
 
 const url = "http://zomatoajulypi.herokuapp.com/menuItem";
 const pUrl = "http://localhost:2500/placeOrder"
@@ -8,14 +7,14 @@ class PlaceOrder extends Component{
 
     constructor(props){
         super(props)
-        let sessionData = sessionStorage.getItem('userInfo')?sessionStorage.getItem('userInfo').split(','):[]
+
         this.state={
             id:Math.floor(Math.random()*10000),
             hotel_name:this.props.match.params.restName,
-            name:sessionData?sessionData[0]:'',
-            email:sessionData?sessionData[1]:'',
+            name:'Nippun',
+            email:'nippun@gmail.com',
             cost:0,
-            phone:sessionData?sessionData[2]:'',
+            phone:9876543212,
             address:'Hno98 Sec 1',
             menuItem:''
         }
@@ -56,21 +55,8 @@ class PlaceOrder extends Component{
     }
 
     render(){
-        if(sessionStorage.getItem('ltk') == null){
-              return(
-                  <>
-                    <Header/>
-                    <center>
-                      <h2>Login First To Place Booking</h2>
-                    </center>
-                  </>
-                  
-
-              )  
-        }
         return(
             <>
-            <Header/>
                 <div className="container">
                     <div className="panel panel-primary">
                         <div className="panel-heading">
@@ -90,7 +76,7 @@ class PlaceOrder extends Component{
                                 <div className="form-group col-md-6">
                                     <label for="email" className="control-label">Email</label>
                                     <input className="form-control" name="email" value={this.state.email}
-                                    onChange={this.handleChange} readOnly/>
+                                    onChange={this.handleChange}/>
                                 </div>
                                 <div className="form-group col-md-6">
                                     <label for="phone" className="control-label">Phone</label>

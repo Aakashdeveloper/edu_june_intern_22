@@ -1,0 +1,88 @@
+/* Quick Search Block Css */
+#quickSearch{
+    width:80%;
+    margin-left:10%;
+    margin-top:2%;
+    margin-bottom:2%;
+    display: inline-block;
+}
+
+#QuickHeading{
+    color:#3b2632;
+    display:block;
+    font-size:30px;
+    font-weight:bold;
+    margin-left:2%;
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+
+#QuickHeading:hover{
+    font-size:40px;
+}
+
+#QuickSubHeading{
+    color:gray;
+    font-size:20px;
+    margin-left:2%;
+    line-height: 3;
+}
+
+.tileContainer{
+    height:180px;
+    width:30%;
+    /* border:2px solid black; */
+    box-shadow: 10px 20px 15px #3b2632;
+    float:left;
+    margin-left:2%;
+    margin-top:3%;
+    animation: dance 10s infinite;
+}
+
+@keyframes dance{
+    0% {transform:rotate(-5deg)}
+    25% {transform:rotate(0deg)}
+    50% {transform:rotate(5deg)}
+    65% {transform:scale(1.1)}
+    75% {transform:rotate(0deg)}
+    100% {transform:rotate(-5deg)}
+}
+
+
+
+.tileContainer:hover{
+    /* transform:scale(1.1) */
+    /* transform:skewY(10deg) */
+    /* transform: rotate(180deg); */
+    /* transform: translate(100px,100px); */
+    transform:scale(1.1)
+}
+
+.tileComponent1{
+    width:52%;
+    float: left;
+}
+.tileComponent1 img{
+    width:100%;
+    height:180px;
+}
+
+.tileComponent2{
+    width:45%;
+    float: left;
+    margin-top: 15%;
+    margin-left:2%
+}
+
+.componentHeading{
+    color:#3b2632;
+    font-size: 25px;
+}
+
+.componentHeading > a {
+    color:#3b2632 !important;
+}
+
+.componentSubHeading{
+    color:gray;
+    font-size: 20px;
+}
